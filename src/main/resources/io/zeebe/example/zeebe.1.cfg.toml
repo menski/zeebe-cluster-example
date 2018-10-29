@@ -1,0 +1,14 @@
+[cluster]
+nodeId = 0
+partitionsCount = 1
+replicationFactor = 2
+clusterSize = 2
+
+initialContactPoints = [
+  "localhost:26502",
+  "localhost:36502"
+]
+
+[[exporters]]
+id = "simple-monitor"
+className = "io.zeebe.monitor.SimpleMonitorExporter"
